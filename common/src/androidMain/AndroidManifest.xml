@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.liangguo.translator.common">
+
+    <application
+            android:icon="@drawable/app_icon_round_corner"
+    >
+
+    </application>
+
+</manifest>

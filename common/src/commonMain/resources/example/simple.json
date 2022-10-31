@@ -1,0 +1,78 @@
+{
+  "returnPhrase": [
+    "simple"
+  ],
+  "query": "simple",
+  "errorCode": "0",
+  "l": "en2zh-CHS",
+  "tSpeakUrl": "https://openapi.youdao.com/ttsapi?q=%E7%AE%80%E5%8D%95%E7%9A%84&langType=zh-CHS&sign=A3E42E5E662606BB73E59D40D9103D9F&salt=1666444413959&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false",
+  "web": [
+    {
+      "value": [
+        "简单",
+        "简易的",
+        "单纯"
+      ],
+      "key": "Simple"
+    },
+    {
+      "value": [
+        "简单机器"
+      ],
+      "key": "simple machine"
+    },
+    {
+      "value": [
+        "血迷宫",
+        "血不容易探索的领域",
+        "血没有容难探索的领域"
+      ],
+      "key": "Blood Simple"
+    }
+  ],
+  "requestId": "2d100cb3-a0dd-460b-a078-fb93c034354d",
+  "translation": [
+    "简单的"
+  ],
+  "dict": {
+    "url": "yddict://m.youdao.com/dict?le=eng&q=simple"
+  },
+  "webdict": {
+    "url": "http://mobile.youdao.com/dict?le=eng&q=simple"
+  },
+  "basic": {
+    "exam_type": [
+      "初中",
+      "高中",
+      "CET4",
+      "CET6",
+      "考研"
+    ],
+    "us-phonetic": "ˈsɪmp(ə)l",
+    "phonetic": "ˈsɪmp(ə)l",
+    "uk-phonetic": "ˈsɪmp(ə)l",
+    "wfs": [
+      {
+        "wf": {
+          "name": "比较级",
+          "value": "simpler或more simple"
+        }
+      },
+      {
+        "wf": {
+          "name": "最高级",
+          "value": "simplest或most simple"
+        }
+      }
+    ],
+    "uk-speech": "https://openapi.youdao.com/ttsapi?q=simple&langType=en&sign=AB3AA0C0FAF7895D13668196EC9D2195&salt=1666444413959&voice=5&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false",
+    "explains": [
+      "adj. 简单的，简明的；简朴的，朴素的；纯粹的，完全的；结构单一的，简易的；普通的，平凡的；愚笨的，迟钝的；（动词时态）简单的；（数）简单的；（叶、茎）没有分杈的；（镜头、显微镜等）单镜头的；（利息）单利的；（句子）无从句的",
+      "n. <史> 草药，药草；出身低微者；笨蛋",
+      "【名】  （Simple）（法）桑普勒（人名）"
+    ],
+    "us-speech": "https://openapi.youdao.com/ttsapi?q=simple&langType=en&sign=AB3AA0C0FAF7895D13668196EC9D2195&salt=1666444413959&voice=6&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false"
+  },
+  "isWord": true,
+  "speakUrl": "https://openapi.youdao.com/ttsapi?q=simple&langType=en&sign=AB3AA0C0FAF7895D13668196EC9D2195&salt=1666444413959&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false"
+}

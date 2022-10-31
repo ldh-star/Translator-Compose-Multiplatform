@@ -1,0 +1,64 @@
+{
+  "returnPhrase": [
+    "yeah"
+  ],
+  "query": "yeah",
+  "errorCode": "0",
+  "l": "en2zh-CHS",
+  "tSpeakUrl": "https://openapi.youdao.com/ttsapi?q=%E6%98%AF%E7%9A%84&langType=zh-CHS&sign=AC0C429A63785E70EA1FB033814EA9E8&salt=1666429905638&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false",
+  "web": [
+    {
+      "value": [
+        "是的",
+        "亚瑟小子",
+        "阳光照耀美满的家庭",
+        "是啊"
+      ],
+      "key": "yeah"
+    },
+    {
+      "value": [
+        "哦",
+        "哦耶",
+        "哦也"
+      ],
+      "key": "Oh yeah"
+    },
+    {
+      "value": [
+        "弹球耶",
+        "华丽弹球"
+      ],
+      "key": "Pinball Yeah"
+    }
+  ],
+  "requestId": "2806b081-161d-46a6-9ac6-abdfec6f04bb",
+  "translation": [
+    "是的"
+  ],
+  "dict": {
+    "url": "yddict://m.youdao.com/dict?le=eng&q=yeah"
+  },
+  "webdict": {
+    "url": "http://mobile.youdao.com/dict?le=eng&q=yeah"
+  },
+  "basic": {
+    "exam_type": [
+      "初中",
+      "CET4",
+      "CET6"
+    ],
+    "us-phonetic": "jeə",
+    "phonetic": "jeə",
+    "uk-phonetic": "jeə",
+    "uk-speech": "https://openapi.youdao.com/ttsapi?q=yeah&langType=en&sign=4828888432DEACF553C36A9F8A9E387E&salt=1666429905638&voice=5&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false",
+    "explains": [
+      "int. 是，对",
+      "n. 是，对",
+      "adv. 是，对；表示惊讶或反对；表示不相信"
+    ],
+    "us-speech": "https://openapi.youdao.com/ttsapi?q=yeah&langType=en&sign=4828888432DEACF553C36A9F8A9E387E&salt=1666429905638&voice=6&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false"
+  },
+  "isWord": true,
+  "speakUrl": "https://openapi.youdao.com/ttsapi?q=yeah&langType=en&sign=4828888432DEACF553C36A9F8A9E387E&salt=1666429905638&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false"
+}

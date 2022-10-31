@@ -1,0 +1,104 @@
+{
+  "returnPhrase": [
+    "fun"
+  ],
+  "query": "fun",
+  "errorCode": "0",
+  "l": "en2zh-CHS",
+  "tSpeakUrl": "https://openapi.youdao.com/ttsapi?q=%E6%9C%89%E8%B6%A3%E7%9A%84&langType=zh-CHS&sign=F22E993F2080ECFA0B878065515F9825&salt=1666428832433&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false",
+  "web": [
+    {
+      "value": [
+        "乐趣",
+        "有趣的",
+        "奋发",
+        "娱乐"
+      ],
+      "key": "Fun"
+    },
+    {
+      "value": [
+        "套马"
+      ],
+      "key": "Horse Fun"
+    },
+    {
+      "value": [
+        "化纤花式裘皮",
+        "趣味皮草",
+        "趣皮草",
+        "俏皮绒毛"
+      ],
+      "key": "fun fur"
+    }
+  ],
+  "requestId": "34e653c7-ec71-4214-81ca-9fd51f3d3316",
+  "translation": [
+    "有趣的"
+  ],
+  "dict": {
+    "url": "yddict://m.youdao.com/dict?le=eng&q=fun"
+  },
+  "webdict": {
+    "url": "http://mobile.youdao.com/dict?le=eng&q=fun"
+  },
+  "basic": {
+    "exam_type": [
+      "初中",
+      "高中",
+      "CET4",
+      "CET6",
+      "考研"
+    ],
+    "us-phonetic": "fʌn",
+    "phonetic": "fʌn",
+    "uk-phonetic": "fʌn",
+    "wfs": [
+      {
+        "wf": {
+          "name": "第三人称单数",
+          "value": "funs"
+        }
+      },
+      {
+        "wf": {
+          "name": "现在分词",
+          "value": "funning"
+        }
+      },
+      {
+        "wf": {
+          "name": "过去式",
+          "value": "funned"
+        }
+      },
+      {
+        "wf": {
+          "name": "过去分词",
+          "value": "funned"
+        }
+      },
+      {
+        "wf": {
+          "name": "比较级",
+          "value": "funner"
+        }
+      },
+      {
+        "wf": {
+          "name": "最高级",
+          "value": "funnest"
+        }
+      }
+    ],
+    "uk-speech": "https://openapi.youdao.com/ttsapi?q=fun&langType=en&sign=3574FB1002B7CC2D28412665343320F4&salt=1666428832433&voice=5&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false",
+    "explains": [
+      "n. 乐趣，享受；嬉戏，玩笑",
+      "adj. 有趣的，令人愉快的",
+      "v. <美，非正式> 开玩笑，取笑"
+    ],
+    "us-speech": "https://openapi.youdao.com/ttsapi?q=fun&langType=en&sign=3574FB1002B7CC2D28412665343320F4&salt=1666428832433&voice=6&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false"
+  },
+  "isWord": true,
+  "speakUrl": "https://openapi.youdao.com/ttsapi?q=fun&langType=en&sign=3574FB1002B7CC2D28412665343320F4&salt=1666428832433&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false"
+}

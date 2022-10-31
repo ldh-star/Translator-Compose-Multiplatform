@@ -1,0 +1,59 @@
+{
+  "returnPhrase": [
+    "发音"
+  ],
+  "query": "发音",
+  "errorCode": "0",
+  "l": "zh-CHS2en",
+  "tSpeakUrl": "https://openapi.youdao.com/ttsapi?q=pronunciation&langType=en&sign=2122860DC6DF57A78826A7AC2174C8E4&salt=1666431017555&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false",
+  "web": [
+    {
+      "value": [
+        "pronunciation",
+        "pronounce",
+        "Articulation",
+        "sound"
+      ],
+      "key": "发音"
+    },
+    {
+      "value": [
+        "place of articulation",
+        "point of articulation",
+        "What is the place of articulation",
+        "region of articulation"
+      ],
+      "key": "发音部位"
+    },
+    {
+      "value": [
+        "manner of articulation",
+        "pronunciation",
+        "articulatory technic",
+        "articulation manner"
+      ],
+      "key": "发音方法"
+    }
+  ],
+  "requestId": "067ac9f7-51e9-4b9c-90bb-18dafda9ed2c",
+  "translation": [
+    "pronunciation"
+  ],
+  "dict": {
+    "url": "yddict://m.youdao.com/dict?le=eng&q=%E5%8F%91%E9%9F%B3"
+  },
+  "webdict": {
+    "url": "http://mobile.youdao.com/dict?le=eng&q=%E5%8F%91%E9%9F%B3"
+  },
+  "basic": {
+    "phonetic": "fā yīn",
+    "explains": [
+      "pronounce",
+      "pronunciation",
+      "articulation",
+      "articulate"
+    ]
+  },
+  "isWord": true,
+  "speakUrl": "https://openapi.youdao.com/ttsapi?q=%E5%8F%91%E9%9F%B3&langType=zh-CHS&sign=C40AF92614E1CAC314CB4303A4909680&salt=1666431017555&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false"
+}
