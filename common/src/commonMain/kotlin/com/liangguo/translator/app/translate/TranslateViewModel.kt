@@ -27,8 +27,7 @@ import com.liangguo.translator.logic.network.youdao.model.result.YouDaoErrorCode
 import com.liangguo.translator.utils.asType
 import com.liangguo.translator.utils.randomArrangement
 import kotlinx.coroutines.*
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.*
 
 
 /**
@@ -195,7 +194,6 @@ class TranslateViewModel(private val platformAction: PlatformAction = PlatformAc
 
                 TranslateScreenUiAction.ChangeEngine -> {
                     //切换引擎，先把当前引擎的语言设置保存一下，再加载另一种引擎的语言的设置
-//                    val current = TransEngine.Engines.indexOf(translateUiState.transEngine)
                     val current = TransEngine.Engines.indexOf(engine.value)
                     val index = (current + 1) % TransEngine.Engines.size
                     val language = translateUiState.language
@@ -281,7 +279,7 @@ class TranslateViewModel(private val platformAction: PlatformAction = PlatformAc
      * 调用时在函数块中用 data class 的 copy函数就行
      */
     fun updateUiState(update: TranslateUiState.() -> TranslateUiState) {
-        _uiState.tryEmit(update(translateUiState))
+        _uiState.update { update(it) }
     }
 
     /**
@@ -399,24 +397,16 @@ class TranslateViewModel(private val platformAction: PlatformAction = PlatformAc
         }
 
         launch {
-            shouldBeLandscape.collectLatest {
-                if (settings.screenOrientation.value == ScreenOrientation.Auto) {
-                    updateUiState { copy(isLandscape = it) }
-                    println("true")
+            combine(shouldBeLandscape, settings.screenOrientation) { shouldBeLandscape, orientation ->
+                when (orientation) {
+                    ScreenOrientation.Landscape -> true
+                    ScreenOrientation.Portrait -> false
+                    else -> shouldBeLandscape
                 }
+            }.stateIn(this, SharingStarted.WhileSubscribed(), TranslateUiState.Default.isLandscape).collectLatest {
+                updateUiState { copy(isLandscape = it) }
             }
         }
-
-        launch {
-            settings.screenOrientation.collectLatest {
-                if (it == ScreenOrientation.Auto) {
-                    updateUiState { copy(isLandscape = shouldBeLandscape.value) }
-                } else {
-                    updateUiState { copy(isLandscape = it == ScreenOrientation.Landscape) }
-                }
-            }
-        }
-
 
     }
 
