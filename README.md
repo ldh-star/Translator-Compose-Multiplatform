@@ -8,7 +8,7 @@
 
 ### 中文 | [English](README-en.md)
 
-国内Gitee地址：https://gitee.com/liang_dh/Translator_Multiplatform/
+国内Gitee地址：https://gitee.com/liang_dh/Translator-Compose-Multiplatform
 
 #### 一个简简单单的跨平台翻译小软件，内置了百度翻译和有道翻译的接口，除简单的翻译之外还有降重的功能。
 - **极致的启动速度🚀** 没有任何广告，没有任何后台服务，即开即用，不再需要小心翼翼的点击”跳过广告“然后还要等主界面卡半天才能用。

@@ -8,9 +8,9 @@
 
 ### [中文](README.md) | English
 
-The address of the Gitee repository：https://gitee.com/liang_dh/Translator_Multiplatform/
+The address of the Gitee repository：https://gitee.com/liang_dh/Translator-Compose-Multiplatform
 
-#### This is a simple cross-platform translation software, built in Baidu translation and Youdao translation interface, in addition to the simple translation and weight reduction function.
+#### This is a simple cross-platform translation software, built in Baidu translation and YouDao translation interface, in addition to the simple translation and weight reduction function.
 - **Extreme startup speed🚀** No ads, no background services, out of the box, no need to discreetly click "skip AD" and wait half a day for the main interface card to be used.
 - **The paper reduces the repetition rate function😊** Just a click of the button, you can get another way of writing a paragraph of text, reduce the weight of the translation of the number of times up to you! Check rate down to 10% per minute!
 - **Streamlined interface**, cutting-edge technology, make Material Design style is no longer just a special feature of Android.
