@@ -9,6 +9,7 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.6.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 
     testImplementation("junit:junit:4.13.2")
 

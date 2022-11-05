@@ -4,7 +4,9 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.graphics.Color
+import com.liangguo.translator.app.settings.model.Theme
 
 
 /**

@@ -26,11 +26,11 @@ import com.liangguo.translator.app.translate.TranslateMainScreen
 import com.liangguo.translator.app.translate.TranslateViewModel
 
 @Composable
-fun TranslateApp(viewModel: TranslateViewModel = remember { TranslateViewModel() }) {
+fun TranslateApp(viewModel: TranslateViewModel) {
     val theme by viewModel.theme.collectAsState()
     CompositionLocalProvider(LocalSpacing provides Spacing()) {
+        androidx.compose.material.MaterialTheme(colors = theme.materialColors) {
         MaterialTheme(colorScheme = theme.materialColorScheme) {
-            androidx.compose.material.MaterialTheme(colors = theme.materialColors) {
                 Surface(modifier = Modifier.onPreviewKeyEvent(viewModel::onPreviewKeyEvent).fillMaxSize()) {
                     viewModel.clipboardManager = LocalClipboardManager.current
                     TranslateMainScreen(viewModel)
@@ -42,7 +42,6 @@ fun TranslateApp(viewModel: TranslateViewModel = remember { TranslateViewModel()
 
 @Composable
 fun DebugControlScreen(viewModel: TranslateViewModel) {
-    val theme by viewModel.theme.collectAsState()
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.BottomEnd) {
         Row {
             IconButton(onClick = {

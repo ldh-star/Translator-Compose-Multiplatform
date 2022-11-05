@@ -11,8 +11,6 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ExitToApp
-import androidx.compose.material.icons.filled.ShieldMoon
-import androidx.compose.material.icons.filled.WbSunny
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -29,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.liangguo.common.model.Res
 import com.liangguo.translator.app.common.Image
-import com.liangguo.translator.app.settings.model.Theme
+import com.liangguo.translator.app.settings.model.next
 import com.liangguo.translator.app.translate.model.TranslateScreenUiAction
 import com.liangguo.translator.app.translate.model.UiScreen
 import kotlinx.coroutines.launch
@@ -93,7 +91,7 @@ fun SideMenuScreen(viewModel: TranslateViewModel, modifier: Modifier = Modifier)
                 val theme by viewModel.theme.collectAsState()
                 Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
                     TextButton(onClick = {
-                        viewModel.theme.tryEmit(if (theme.isLight) Theme.Dark else Theme.Light)
+                        viewModel.theme.tryEmit(theme.next())
                     }) {
                         AnimatedContent(
                             modifier = Modifier.padding(horizontal = 7.dp, vertical = 4.dp).alpha(0.5f),
@@ -101,11 +99,16 @@ fun SideMenuScreen(viewModel: TranslateViewModel, modifier: Modifier = Modifier)
                             transitionSpec = {
                                 fadeIn() + slideInHorizontally() with fadeOut() + slideOutVertically()
                             }) {
-                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                Icon(
-                                    imageVector = if (theme.isLight) Icons.Default.ShieldMoon else Icons.Default.WbSunny,
-                                    contentDescription = null
-                                )
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.animateContentSize()
+                            ) {
+                                theme.iconVector?.let { icon ->
+                                    Icon(
+                                        imageVector = icon,
+                                        contentDescription = null
+                                    )
+                                }
                                 Spacer(modifier = Modifier.width(10.dp))
                                 Text(text = theme.name)
                             }

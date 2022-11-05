@@ -115,7 +115,7 @@ fun EngineSettingBox(viewModel: TranslateViewModel, modifier: Modifier = Modifie
     val rotation by animateFloatAsState(if (expanded) 180f else 360f)
     Box(modifier = modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
         val fraction by animateFloatAsState(
-            targetValue = if (!expanded || isLandscape) SettingsFraction else 0.83f,
+            targetValue = if (!expanded || isLandscape) SettingsFraction else 0.86f,
             animationSpec = spring(stiffness = Spring.StiffnessMediumLow)
         )
         Column(
