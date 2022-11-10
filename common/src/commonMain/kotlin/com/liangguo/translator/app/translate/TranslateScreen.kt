@@ -5,8 +5,10 @@ import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -151,7 +153,6 @@ fun MainContentScreen(viewModel: TranslateViewModel) {
 fun TranslateContentScreen(viewModel: TranslateViewModel, modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         if (viewModel.uiState.isLandscape) {
-
             Spacer(modifier = Modifier.height(20.dp))
             ButtonControlPanel(viewModel)
             Spacer(modifier = Modifier.height(20.dp))

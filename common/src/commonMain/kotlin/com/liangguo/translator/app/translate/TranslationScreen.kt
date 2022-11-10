@@ -9,12 +9,14 @@ import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -30,6 +32,7 @@ import com.liangguo.translator.logic.network.base.LanguageCode
 import com.liangguo.translator.logic.network.youdao.model.Language
 import com.liangguo.translator.logic.network.youdao.model.result.YouDaoJsonRootBean
 import com.liangguo.translator.logic.network.youdao.model.result.YouDaoLanguageCode
+import com.liangguo.translator.utils.asType
 
 
 /**
@@ -51,12 +54,10 @@ fun TranslationScreen(viewModel: TranslateViewModel) {
                     languageCodeType = if (state.translation is BaiduJsonRootBean) BaiduLanguageCode else YouDaoLanguageCode,
                     language = state.translation.language
                 ) {
-                    if (state.translation is BaiduJsonRootBean) {
-
-                    } else if (state.translation is YouDaoJsonRootBean) {
+                    state.translation.asType<YouDaoJsonRootBean>()?.let {
                         YouDaoTranslationContent(
                             viewModel = viewModel,
-                            translation = state.translation as YouDaoJsonRootBean
+                            translation = it
                         )
                     }
                 }
@@ -320,6 +321,7 @@ fun LazyListScope.YouDaoTranslationContent(viewModel: TranslateViewModel, transl
         item {
             Spacer(modifier = Modifier.height(10.dp))
         }
+
     }
 
 
@@ -349,10 +351,35 @@ fun LazyListScope.YouDaoTranslationContent(viewModel: TranslateViewModel, transl
             }
 
             item {
-                Spacer(modifier = Modifier.height(25.dp))
+                Spacer(modifier = Modifier.height(10.dp))
             }
 
         }
 
     }
+
+    translation.webdict?.let {
+        item {
+            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                val uriHandler = LocalUriHandler.current
+                    androidx.compose.material3.TextButton(onClick = {
+                    uriHandler.openUri(it.url)
+                }) {
+                    Spacer(modifier = Modifier.width(30.dp))
+                    Text(
+                        text = "更多网络释义",
+                        color = Light_Blue_500,
+                        fontSize = 14.sp,
+                        modifier = Modifier.alpha(0.7f)
+                    )
+                    Spacer(modifier = Modifier.width(30.dp))
+                }
+            }
+        }
+    }
+
+    item {
+        Spacer(modifier = Modifier.height(15.dp))
+    }
+
 }
