@@ -81,14 +81,19 @@ compose is a lot like flutter, both of which are frameworks developed by Google,
 <br/>
 In the process of development also write a little diary, boring words can be [clicked in to see](docs/diary.md)
 
-## Sponsored by the author
-If you think I have helped you, you can give me a little encouragement, thank the boss! (You can include your name and Github address when you tip), any amount, to show your support.
+[//]: # (## Sponsored by the author)
 
-![](images/pay.jpg)
+[//]: # (If you think I have helped you, you can give me a little encouragement, thank the boss! &#40;You can include your name and Github address when you tip&#41;, any amount, to show your support.)
 
-| Sponsors | Home                        |
-|----------|-----------------------------|
-| ldh      | https://github.com/ldh-star |
+[//]: # ()
+[//]: # (![]&#40;images/pay.jpg&#41;)
+
+[//]: # ()
+[//]: # (| Sponsors | Home                        |)
+
+[//]: # (|----------|-----------------------------|)
+
+[//]: # (| ldh      | https://github.com/ldh-star |)
 
 
 ## Contact information
