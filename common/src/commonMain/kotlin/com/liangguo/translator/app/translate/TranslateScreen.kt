@@ -5,10 +5,8 @@ import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -388,7 +386,7 @@ fun TranslateButton(viewModel: TranslateViewModel) {
     Box(modifier = Modifier.size(46.dp), contentAlignment = Alignment.Center) {
         val translating = viewModel.uiState.loadingState == LoadingState.Translating
         val animScale by animateFloatAsState(targetValue = if (translating) 0.7f else 1f)
-        Tooltip(text = "翻译 (Alt + Enter)", modifier = Modifier, offset = DpOffset(x = 0.dp, y = 14.dp)) {
+        Tooltip(text = "翻译 (Enter)", modifier = Modifier, offset = DpOffset(x = 0.dp, y = 14.dp)) {
             FloatingActionButton(
                 onClick = {
                     viewModel.onAction(TranslateScreenUiAction.DoTranslate)

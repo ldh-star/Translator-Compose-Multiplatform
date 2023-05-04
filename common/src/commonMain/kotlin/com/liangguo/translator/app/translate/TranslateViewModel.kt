@@ -308,15 +308,6 @@ class TranslateViewModel(private val platformAction: PlatformAction = PlatformAc
 
             if (keyEvent.isAltPressed) {
                 when (key) {
-                    Key.Enter -> {
-                        if (keyEvent.isCtrlPressed) {
-                            focusRequester.requestFocus()
-                        } else {
-                            onAction(TranslateScreenUiAction.DoTranslate)
-                        }
-                        return true
-                    }
-
                     Key.Backspace -> {
                         onAction(TranslateScreenUiAction.ClearAll)
                         focusRequester.requestFocus()
@@ -332,12 +323,24 @@ class TranslateViewModel(private val platformAction: PlatformAction = PlatformAc
                         onAction(TranslateScreenUiAction.ChangeMenuVisible(open = true, false))
                         return true
                     }
-
-
                 }
             }
         }
-        if (keyEvent.isAltPressed) return true
+        if (keyEvent.key == Key.Enter) {
+            // 当按下Enter时，会自动进行翻译
+            if (keyEvent.isAltPressed) {
+                if (keyEvent.isCtrlPressed) {
+                    // 若是Alt + Ctrl + Enter，则会自动聚焦到输入框。
+                    focusRequester.requestFocus()
+                    return true
+                }
+                // 若是Alt + Enter，则进行输入换行。
+                return false
+            } else {
+                onAction(TranslateScreenUiAction.DoTranslate)
+                return true
+            }
+        }
         return false
     }
 

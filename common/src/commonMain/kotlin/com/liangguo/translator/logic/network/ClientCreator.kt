@@ -18,6 +18,9 @@ object ClientCreator {
     val json = Json {
         isLenient = true
         explicitNulls = false
+
+        // 以后就算这个接口出了未知的新属性，那这个json也能继续转义以前已知的而不至于报错。
+        ignoreUnknownKeys = true
     }
 
     fun ktorClient() = HttpClient(OkHttp) {
