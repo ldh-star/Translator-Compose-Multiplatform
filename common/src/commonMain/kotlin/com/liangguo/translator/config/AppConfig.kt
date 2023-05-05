@@ -11,6 +11,6 @@ object AppConfig {
     /**
      * 不知道怎么把gradle的内容对应到代码里，只能出此下策了
      */
-    const val VERSION = "1.1.2"
+    const val VERSION = "1.1.3"
 
 }
