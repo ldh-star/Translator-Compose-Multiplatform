@@ -184,8 +184,8 @@ class TranslateViewModel(private val platformAction: PlatformAction = PlatformAc
                                 string = result.asType<TranslateState.Success>()?.translation?.getTranslationString()
                                 preLang = it
 
-                                //因为百度翻译会限制你的调用频率，所以每次翻译完了之后要等待1秒
-                                if (engine == TransEngine.BaiduEngine) delay(1000)
+                                //因为翻译接口会限制你的调用频率，所以每次翻译完了之后要等待1秒
+                                delay(1000)
                             }
                             updateUiState { copy(loadingState = LoadingState.Nothing) }
                         }
