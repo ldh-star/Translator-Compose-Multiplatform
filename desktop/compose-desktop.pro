@@ -1,0 +1,2 @@
+-dontwarn okhttp3.**
+-dontwarn org.slf4j.**

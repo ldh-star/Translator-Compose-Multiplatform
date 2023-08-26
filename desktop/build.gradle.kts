@@ -32,5 +32,10 @@ compose.desktop {
             packageName = "Translator_Multiplatform"
             packageVersion = "1.1.3"
         }
+        buildTypes.release {
+            proguard {
+                configurationFiles.from("compose-desktop.pro")
+            }
+        }
     }
 }
