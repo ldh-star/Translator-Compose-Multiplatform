@@ -30,6 +30,8 @@ data class YouDaoJsonRootBean(
     @Serializable
     val dict: Dict?,
     @Serializable
+    val mTerminalDict: Dict?,
+    @Serializable
     val errorCode: String,
     @Serializable
     val isWord: Boolean?,
@@ -54,7 +56,7 @@ data class YouDaoJsonRootBean(
 ) : TransResultInterface {
 
     val isError: Boolean
-        get() = (errorCode?.toIntOrNull() ?: 0) > 100
+        get() = (errorCode.toIntOrNull() ?: 0) > 100
 
     /**
      * 对应 List<String> translation

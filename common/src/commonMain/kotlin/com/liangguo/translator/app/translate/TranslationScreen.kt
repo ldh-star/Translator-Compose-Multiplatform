@@ -358,11 +358,31 @@ fun LazyListScope.YouDaoTranslationContent(viewModel: TranslateViewModel, transl
 
     }
 
-    translation.webdict?.let {
+    translation.mTerminalDict?.let {
         item {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 val uriHandler = LocalUriHandler.current
                     androidx.compose.material3.TextButton(onClick = {
+                    uriHandler.openUri(it.url)
+                }) {
+                    Spacer(modifier = Modifier.width(30.dp))
+                    Text(
+                        text = "在线词典",
+                        color = Light_Blue_500,
+                        fontSize = 14.sp,
+                        modifier = Modifier.alpha(0.7f)
+                    )
+                    Spacer(modifier = Modifier.width(30.dp))
+                }
+            }
+        }
+    }
+
+    translation.webdict?.let {
+        item {
+            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                val uriHandler = LocalUriHandler.current
+                androidx.compose.material3.TextButton(onClick = {
                     uriHandler.openUri(it.url)
                 }) {
                     Spacer(modifier = Modifier.width(30.dp))
@@ -377,6 +397,7 @@ fun LazyListScope.YouDaoTranslationContent(viewModel: TranslateViewModel, transl
             }
         }
     }
+
 
     item {
         Spacer(modifier = Modifier.height(15.dp))

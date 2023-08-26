@@ -68,7 +68,7 @@ fun SettingsScreen(viewModel: TranslateViewModel) {
         item { Spacer(modifier = Modifier.height(LocalSpacing.current.moduleLineSpace)) }
 
         item {
-            SettingSummaryText(text = "降重所经理翻译次数", modifier = Modifier.fillMaxWidth(SettingsFraction))
+            SettingSummaryText(text = "降重所经历翻译次数", modifier = Modifier.fillMaxWidth(SettingsFraction))
         }
 
         item { Spacer(modifier = Modifier.height(LocalSpacing.current.titleLineSpace)) }

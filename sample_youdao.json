@@ -1,0 +1,61 @@
+{
+  "returnPhrase": [
+    "�ð�"
+  ],
+  "query": "�ð�",
+  "errorCode": "0",
+  "l": "zh-CHS2en",
+  "tSpeakUrl": "https://openapi.youdao.com/ttsapi?q=All+right&langType=en-USA&sign=F13D074A013D92000D3D897CDAB99045&salt=1685419444961&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false&osType=api",
+  "web": [
+    {
+      "value": [
+        "attagirl",
+        "attaboy",
+        "Great",
+        "All right"
+      ],
+      "key": "�ð�"
+    },
+    {
+      "value": [
+        "How Nice",
+        "forever young"
+      ],
+      "key": "��ð�"
+    },
+    {
+      "value": [
+        "lovely weather,isn't it",
+        "schones wetter,nicht wahr",
+        "See you later",
+        "nicht wahr"
+      ],
+      "key": "������ð�"
+    }
+  ],
+  "requestId": "1ab312a9-6f99-4763-b8b4-d3113c85c437",
+  "translation": [
+    "All right"
+  ],
+  "mTerminalDict": {
+    "url": "https://m.youdao.com/m/result?lang=zh-CHS&word=%E5%A5%BD%E5%95%8A"
+  },
+  "dict": {
+    "url": "yddict://m.youdao.com/dict?le=eng&q=%E5%A5%BD%E5%95%8A"
+  },
+  "webdict": {
+    "url": "http://mobile.youdao.com/dict?le=eng&q=%E5%A5%BD%E5%95%8A"
+  },
+  "basic": {
+    "phonetic": "h��o ��",
+    "explains": [
+      "well",
+      "good",
+      "excellent",
+      "well done",
+      "wonderful"
+    ]
+  },
+  "isWord": true,
+  "speakUrl": "https://openapi.youdao.com/ttsapi?q=%E5%A5%BD%E5%95%8A&langType=zh-CHS&sign=D6C006629CA57A7A68D26D8E5ABA10C7&salt=1685419444961&voice=1&format=mp3&appKey=1aa8d33ef7dd0855&ttsVoiceStrict=false&osType=api"
+}
