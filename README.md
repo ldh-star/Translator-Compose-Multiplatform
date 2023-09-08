@@ -32,7 +32,6 @@
 - 项目SDK: Java 17 (Oracle OpenJdk version 17.0.4)
 
 ## 已知的问题
-- 打包安卓release包会出问题，debug包没问题，待解决。
 - 打包电脑端程序时，需要把 gradle jvm 的版本更改到15以上，并且在 gradle.properties 文件中删除 org.gradle.jvmargs=...，这样换来换去很麻烦，待改进。
 - 程序在电脑端运行时，如果安装在默认的 C:/Program Files/ 中，文件系统会失效，你可以把文件复制到其他目录中然后点击exe启动。
 

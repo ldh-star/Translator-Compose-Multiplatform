@@ -34,9 +34,9 @@ android {
         }
     }
 
-
-    //打包release报错 ClassNotFound com.android.tools.lint.client.api.Vendor,加入这句试试
-//    lintOptions { isCheckReleaseBuilds = false }
-
+    lintOptions {
+        //打包release报错 ClassNotFound com.android.tools.lint.client.api.Vendor,加入这句试试
+        isCheckReleaseBuilds = false
+    }
 
 }
