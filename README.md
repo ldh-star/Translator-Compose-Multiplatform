@@ -214,6 +214,7 @@ collect函数会持续的收集flow的数据，所以会在协程中一直阻塞
 |--------|-----------------------------|
 | Hesley | https://github.com/ldh-star |
 
+![](images/WechatIMG81.jpg)
 
 ## 联系方式
 
